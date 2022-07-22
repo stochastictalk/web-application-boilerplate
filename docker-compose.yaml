@@ -1,0 +1,53 @@
+version: "3.5"
+
+services:
+
+  frontend:
+    build: ./frontend
+    ports: 
+      - 3000:3000
+    volumes:
+      - type: bind
+        source: ./frontend/public
+        target: /frontend/public
+      - type: bind
+        source: ./frontend/src
+        target: /frontend/src
+      - type: bind
+        source: ./frontend/package-lock.json
+        target: /frontend/package-lock.json
+      - type: bind
+        source: ./frontend/package.json
+        target: /frontend/package.json
+
+  api:
+    build: ./api
+    ports:
+      - 2740:3000
+      - 2748:8000
+    networks: 
+      - application-network
+    volumes:
+      - type: bind
+        source: ./api/src
+        target: /api
+    command: "uvicorn main:app --reload --reload-dir /api --host 0.0.0.0 --port 3000"
+
+  database:
+    image: postgres:14.4
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=password
+    restart: always
+    networks:
+      - application-network
+    volumes: 
+      - database:/var/lib/postgresql/data
+
+networks:
+  application-network:
+
+volumes:
+  database:
+
