@@ -18,7 +18,7 @@ Edit contents of `/frontend` and `/api` to see changes hotload.
 * API: hotloading Python 3.10 FastAPI application served with Uvicorn.
 * Database: Postgres.
 * Boilerplate code for:
-    * GET/POST requests (Frontend ↔ API ↔ Database) using FastAPI and SQLAlchemy.
+    * GET/POST requests (Frontend ↔ API ↔ Database) using React Query with Axios, FastAPI, and SQLAlchemy.
     * API and database data models using Pydantic and SQLAlchemy.
 
 ### Dependencies
