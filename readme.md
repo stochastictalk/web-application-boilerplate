@@ -1,4 +1,4 @@
-# Simple Web Application Template (React/FastAPI/SQLAlchemy/Postgres)
+# Simple Web Application Template
 
 A template for developing dockerised web applications using React, FastAPI, SQLAlchemy, and Postgres.
 
