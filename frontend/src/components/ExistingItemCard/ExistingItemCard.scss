@@ -1,0 +1,28 @@
+.ExistingItemCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid black;
+  box-shadow: 5px 5px lightsalmon;
+}
+
+.ExistingItemCard--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  
+.ExistingItemCard--description {
+  overflow-x: wrap;
+  max-height: 50px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+  
+.ExistingItemCard--timestamp {
+  font-size: 10px;
+  color: lightslategray;
+}
