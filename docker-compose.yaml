@@ -24,7 +24,6 @@ services:
     build: ./api
     ports:
       - 2740:3000
-      - 2748:8000
     networks: 
       - application-network
     volumes:
