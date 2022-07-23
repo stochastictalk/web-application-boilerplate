@@ -27,7 +27,9 @@ Edit contents of `/frontend` and `/api` to see changes hotload.
 
 * [Docker](https://docs.docker.com/get-docker/)
 
-### Licence
 
+### Licence
+
+Free for commercial and personal use.
 
 
