@@ -14,7 +14,7 @@ Edit contents of `/frontend` and `/api` to see changes hotload.
 ### Features
 
 * Docker Compose file specifying frontend, API, and database services.
-* Frontend: Node 18 server hotloading React application with React Query and Sass.
+* Frontend: Node 18 server hotloading React application with TypeScript, React Query, and Sass.
 * API
     * Hotloading Python 3.10 FastAPI application served with Uvicorn.
     * Documentation auto-generation.
