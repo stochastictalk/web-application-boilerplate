@@ -1,6 +1,10 @@
 import "./DescriptionInput.scss";
 
-export default function DescriptionInput({item, setItem}) {
+import Item from "../../types/Item";
+
+export default function DescriptionInput(
+  {item, setItem}: {item: Item, setItem:  React.Dispatch<React.SetStateAction<Item>>}
+  ) {
     return <input
       autoFocus
       type="text"

@@ -8,7 +8,7 @@ WORKDIR /frontend
 
 COPY ./public ./public
 COPY ./src ./src
-COPY package*.json ./
+COPY *.json ./
 RUN npm install
 
 # Development server listens on port 3000.

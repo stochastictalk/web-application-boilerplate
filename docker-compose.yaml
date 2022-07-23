@@ -19,7 +19,9 @@ services:
       - type: bind
         source: ./frontend/package.json
         target: /frontend/package.json
-
+      - type: bind
+        source: ./frontend/tsconfig.json
+        target: /frontend/tsconfig.json
   api:
     build: ./api
     ports:

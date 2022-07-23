@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 
 import DescriptionInput from "../DescriptionInput/DescriptionInput";
@@ -5,8 +6,10 @@ import AddItemButton from "../AddItemButton/AddItemButton";
 
 import "./NewItemCard.scss";
 
+import Item from "../../types/Item";
+
 export default function NewItemCard() {
-    let [item, setItem] = useState({
+    let [item, setItem] = React.useState<Item>({
       description: ""
     });
   
