@@ -5,7 +5,7 @@ A template for developing dockerised web applications using React, FastAPI, SQLA
 ### Installation & Use
 Clone with `git clone https://github.com/stochastictalk/web-application-boilerplate.git`, then build and run with `docker compose up --build`.
 
-UI is served at `localhost:3000` and API at `localhost:2740`.
+UI is served at `localhost:3000` and API at `localhost:2740`. API autodocumentation courtesy of FastAPI is served at `localhost:2740/docs`.
 
 Edit contents of `/frontend` and `/api` to see changes hotload.
 
@@ -15,13 +15,19 @@ Edit contents of `/frontend` and `/api` to see changes hotload.
 
 * Docker Compose file specifying frontend, API, and database services.
 * Frontend: Node 18 server hotloading React application with React Query and Sass.
-* API: hotloading Python 3.10 FastAPI application served with Uvicorn.
+* API
+    * Hotloading Python 3.10 FastAPI application served with Uvicorn.
+    * Documentation auto-generation.
 * Database: Postgres.
 * Boilerplate code for:
-    * GET/POST requests (Frontend ↔ API ↔ Database) using React Query with Axios, FastAPI, and SQLAlchemy.
+    * GET/POST requests (Frontend ↔ API ↔ Database) using FastAPI and SQLAlchemy.
     * API and database data models using Pydantic and SQLAlchemy.
 
 ### Dependencies
 
 * [Docker](https://docs.docker.com/get-docker/)
+
+### Licence
+
+
 
