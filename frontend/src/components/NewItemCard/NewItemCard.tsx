@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 
 import DescriptionInput from "../DescriptionInput/DescriptionInput";
 import AddItemButton from "../AddItemButton/AddItemButton";
