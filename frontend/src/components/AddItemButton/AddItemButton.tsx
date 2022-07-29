@@ -14,8 +14,8 @@ export default function AddItemButton(
   
     const postMutation = useMutation(postItem, {
       onSuccess: () => {
-        setItem({ description: "" });
-        queryClient.invalidateQueries("items")
+        setItem({ description: "", item_id: ""});
+        queryClient.invalidateQueries(["items"])
       },
     });
   

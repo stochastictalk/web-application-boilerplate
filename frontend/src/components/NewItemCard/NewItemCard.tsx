@@ -10,7 +10,8 @@ import Item from "../../types/Item";
 
 export default function NewItemCard() {
     let [item, setItem] = React.useState<Item>({
-      description: ""
+      description: "",
+      item_id: ""
     });
   
     return <li className="NewItemCard">

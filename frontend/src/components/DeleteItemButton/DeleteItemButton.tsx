@@ -5,12 +5,12 @@ import deleteItem from "../api/deleteItem";
 import "./DeleteItemButton.scss";
 
 
-export default function DeleteItemButton({item_id}: {item_id: string | undefined}) {
+export default function DeleteItemButton({item_id}: {item_id: string}) {
     const queryClient = useQueryClient();
   
     const deleteMutation = useMutation(deleteItem, {
       onSuccess: () => {
-        queryClient.invalidateQueries("items")
+        queryClient.invalidateQueries(["items"])
       },
     });
   
