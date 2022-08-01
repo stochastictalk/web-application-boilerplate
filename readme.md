@@ -9,7 +9,7 @@ UI is served at `localhost:3000` and API at `localhost:2740`. API autodocumentat
 
 Edit contents of `/frontend` and `/api` to see changes hotload.
 
-:warning: If running on a device with a non-AMD chip (e.g. a Mac with an Apple M1), run `export DOCKER_DEFAULT_PLATFORM=linux/amd64` before the build step. This environment variable instructs Docker to build and run Docker images using AMD architecture emulation, which is necessary to avoid a SQLAlchemy dependency error.
+:warning: If running on a device with a non-AMD chip (e.g. a Mac with an Apple M1), run `export DOCKER_DEFAULT_PLATFORM=linux/amd64` before the build step. This environment variable instructs Docker to build and run Docker images using AMD architecture emulation, which is necessary to avoid the SQLAlchemy dependency error `sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) SCRAM authentication requires libpq version 10 or above`.
 
 ### Features
 
