@@ -1,5 +1,7 @@
 # Simple Web Application Template
 
+![](https://img.shields.io/github/v/release/stochastictalk/web-application-boilerplate?display_name=tag) ![](https://img.shields.io/github/stars/stochastictalk/web-application-boilerplate?style=social)
+
 A template for developing dockerised web applications using React, FastAPI, SQLAlchemy, and Postgres.
 
 ### Installation & Use
